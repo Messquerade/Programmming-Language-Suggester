@@ -21,7 +21,7 @@ _This website helps users pick a programming language to study depending on thei
 * _Clone this repository from Github to your desktop_
 * _Navigate to the top of the directory_
 * _Open directory in your text editor of choice_
-* _OR open in browser at [Messquerade.github.io/Programming-Language-Suggester](Messquerade.github.io/Programming-Language-Suggester)_
+* _OR open in browser at [Messquerade.github.io/Programming-Language-Suggester](Messquerade.github.io/Programmming-Language-Suggester)_
 
 
 ## Known Bugs
