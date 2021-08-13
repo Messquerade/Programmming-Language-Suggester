@@ -2,8 +2,32 @@
 #CSharp,
 #Python {
   display: none;
+  margin-top: 20px;
+  border: plum dotted 5px;
+  padding: 10px;
+}
+
+#namePlease {
+  display: none;
+  color: red;
+}
+
+#header {
+  border: plum dotted 5px;
+  padding: 10px;
 }
 
 img {
   height: 150px;
+}
+
+body {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background-color: papayawhip;
+}
+
+#quiz {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }

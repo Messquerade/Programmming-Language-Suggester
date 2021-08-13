@@ -81,19 +81,25 @@ $(document).ready(function() {
     const inputQ7 = $("input:radio[name=rock]:checked").val();
     const result = findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5, inputQ6, inputQ7)
 
-    $("#inputName").text(inputName);
-    if (result === "JavaScript") {
+    $(".inputName").text(inputName);
+    if (!inputName) {
+      $("#namePlease").show();
+      document.getElementById("header").scrollIntoView({behavior: 'smooth'});
+    } else if (result === "JavaScript") {
       $("#JavaScript").show();
       $("#CSharp").hide();
       $("#Python").hide();
+      $("#namePlease").hide();
     } else if (result === "C#") {
       $("#JavaScript").hide();
       $("#CSharp").show();
       $("#Python").hide();
+      $("#namePlease").hide();
     } else if (result === "Python") {
       $("#JavaScript").hide();
       $("#CSharp").hide();
       $("#Python").show();
+      $("#namePlease").hide();
     }
   });
 });
