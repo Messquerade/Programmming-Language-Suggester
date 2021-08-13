@@ -90,16 +90,19 @@ $(document).ready(function() {
       $("#CSharp").hide();
       $("#Python").hide();
       $("#namePlease").hide();
+      document.getElementById("JavaScript").scrollIntoView({behavior: 'smooth'});
     } else if (result === "C#") {
       $("#JavaScript").hide();
       $("#CSharp").show();
       $("#Python").hide();
       $("#namePlease").hide();
+      document.getElementById("CSharp").scrollIntoView({behavior: 'smooth'});
     } else if (result === "Python") {
       $("#JavaScript").hide();
       $("#CSharp").hide();
       $("#Python").show();
       $("#namePlease").hide();
+      document.getElementById("Python").scrollIntoView({behavior: 'smooth'});
     }
   });
 });
