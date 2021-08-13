@@ -1,4 +1,4 @@
-function findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5) {
+function findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5, inputQ6, inputQ7) {
   let aTotal = 0
   let bTotal = 0
   let cTotal = 0
@@ -41,6 +41,22 @@ function findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5) {
   } else if (inputQ5 === "c") {
     cTotal ++;
   }
+
+  if (inputQ6 === "a") {
+    aTotal ++;
+  } else if (inputQ6 === "b") {
+    bTotal ++;
+  } else if (inputQ6 === "c") {
+    cTotal ++;
+  }
+  
+  if (inputQ7 === "a") {
+    aTotal ++;
+  } else if (inputQ7 === "b") {
+    bTotal ++;
+  } else if (inputQ7 === "c") {
+    cTotal ++;
+  }
   return Math.max(aTotal, bTotal, cTotal);
 }
 
@@ -54,6 +70,7 @@ $(document).ready(function() {
     const inputQ3 = $("input:radio[name=job]:checked").val();
     const inputQ4 = $("input:radio[name=recipe]:checked").val();
     const inputQ5 = $("input:radio[name=stuck]:checked").val();
-
+    const inputQ6 = $("input:radio[name=character]:checked").val();
+    const inputQ7 = $("input:radio[name=rock]:checked").val();
   })
 })
