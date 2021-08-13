@@ -69,7 +69,7 @@ function findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5, inputQ6, inputQ
 
 
 $(document).ready(function() {
-  $("#quiz").sumbit(function(event) {
+  $("#quiz").submit(function(event) {
     event.preventDefault();
     const inputName = $("#name").val();
     const inputQ1 = $("input:radio[name=move-in]:checked").val();
