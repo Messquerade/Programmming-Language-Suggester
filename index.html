@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link href="css/bootstrap.css" rel="stylesheet" type="css/text">
-  <link href="css/styles.css" rel="stylesheet" type="css/text">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
@@ -10,15 +10,59 @@
 <body>
   <div class="container">
     <h1>Find a programming language that's right for you!</h1>
-    <p>New to programming? Looking at all the useful languages out there and not sure which to pick? Although all programming languages are a great place to start, this short quiz will offer our suggestion to fit your preferences and goals.</p>
+    <p>New to programming? Looking at all the useful languages out there and not sure which to pick? Although any programming language is a great place to start, this short quiz will offer our suggestion to fit your preferences and goals.</p>
     <form id="quiz">
+
       <div class="form-group">
-        <label for="name">What is your name?: </label>
+        <label for="name">What is your name?</label>
         <input id="name" class="form-control" type="text">
       </div>
+
       <div class="form-group">
-        
+        <label for="first-question">Congratulations! You just moved into a new house! What do you do to get settled in?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="move-in" value="a" checked>
+            a) I want my house to look nice. I install new carpets and pick out paint colors.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="move-in" value="b">
+            b) I install new electrical and plumbing. I want motion sensing lights and to customize my water pressure.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="move-in" value="c">
+            c) I unpack all my clearly labeled boxes and get my stuff organized. I want to feel at home.
+          </label>
+        </div>
       </div>
+
+      <div class="form-group">
+        <label for="second-question">You are planning a surprise party for a close friend. What are you going to tackle first?</label>
+        <div class="radio">
+          <label>
+            <input type="radio" name="planner" value="a" checked>
+            a) I want my house to look nice. I install new carpets and pick out paint colors.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="move-in" value="b">
+            b) I install new electrical and plumbing. I want motion sensing lights and to customize my water pressure.
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="move-in" value="c">
+            c) I unpack all my clearly labeled boxes and get my stuff organized. I want to feel at home.
+          </label>
+        </div>
+      </div>
+
+
 
     </form>
   </div>
