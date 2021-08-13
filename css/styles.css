@@ -2,9 +2,13 @@
 #CSharp,
 #Python {
   display: none;
-  margin-top: 20px;
+  margin-top: 5px;
   border: plum dotted 5px;
   padding: 10px;
+}
+
+#tie {
+  display: none;
 }
 
 #namePlease {
@@ -25,9 +29,23 @@ body {
   margin-top: 10px;
   margin-bottom: 20px;
   background-color: papayawhip;
+  color: rgb(2, 2, 41);
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
 }
 
 #quiz {
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.btn {
+  margin: 20px;
+  background-color: rgb(171, 228, 222);
+  font-style: oblique;
+}
+
+.form-group {
+  background-color: rgb(207, 228, 226);
+  padding: 10px;
 }

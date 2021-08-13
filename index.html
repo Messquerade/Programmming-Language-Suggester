@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   <link href="css/styles.css" rel="stylesheet" type="text/css">
@@ -7,11 +8,14 @@
   <script src="js/scripts.js"></script>
   <title>Programming Language Suggester</title>
 </head>
+
 <body>
   <div class="container">
     <div id="header">
       <h1>Find a programming language that's right for you!</h1>
-      <h4>New to programming? Looking at all the useful languages out there and not sure which to pick? Although any programming language is a great place to start, this short quiz will offer our suggestion to fit your preferences and goals.</h4>
+      <h4>New to programming? Looking at all the useful languages out there and not sure which to pick? Although any
+        programming language is a great place to start, this short quiz will offer our suggestion to fit your
+        preferences and goals.</h4>
     </div>
 
     <!-- quiz -->
@@ -23,7 +27,8 @@
       </div>
 
       <div class="form-group">
-        <label for="first-question">Congratulations! You just moved into a new house! What do you do to get settled in?</label>
+        <label for="first-question">Congratulations! You just moved into a new house! What do you do to get settled
+          in?</label>
         <div class="radio">
           <label>
             <input type="radio" name="move-in" value="a" checked>
@@ -45,7 +50,8 @@
       </div>
 
       <div class="form-group">
-        <label for="second-question">You are planning a surprise party for a close friend. What are you going to tackle first?</label>
+        <label for="second-question">You are planning a surprise party for a close friend. What are you going to tackle
+          first?</label>
         <div class="radio">
           <label>
             <input type="radio" name="planner" value="a" checked>
@@ -67,7 +73,8 @@
       </div>
 
       <div class="form-group">
-        <label for="third-question">You are looking at job listings in the newspaper and find the following three descriptions. Which job do you apply for?</label>
+        <label for="third-question">You are looking at job listings in the newspaper and find the following three
+          descriptions. Which job do you apply for?</label>
         <div class="radio">
           <label>
             <input type="radio" name="job" value="a" checked>
@@ -89,11 +96,13 @@
       </div>
 
       <div class="form-group">
-        <label for="fourth-question">You are trying out a new recipe for a dinner party. How do you approach it to make sure it turns out well?</label>
+        <label for="fourth-question">You are trying out a new recipe for a dinner party. How do you approach it to make
+          sure it turns out well?</label>
         <div class="radio">
           <label>
             <input type="radio" name="recipe" value="a" checked>
-            a) I design the perfect presentation; a swirl of sauce here, a fresh sprig of parsley, and the perfect carmelized crust.
+            a) I design the perfect presentation; a swirl of sauce here, a fresh sprig of parsley, and the perfect
+            carmelized crust.
           </label>
         </div>
         <div class="radio">
@@ -131,7 +140,7 @@
           </label>
         </div>
       </div>
-      
+
       <div class="form-group">
         <label for="sixth-question">You are playing a video game. Which character do you pick?</label>
         <div class="radio">
@@ -156,43 +165,64 @@
 
       <div class="form-group">
         <label for="seventh-question">Which of these rocks do you like best?</label>
-        <div class="radio">
-          <label>
-            <input type="radio" name="rock" value="a" checked>
-            a) <img src="img/rainbowrock.webp" alt="a blue and pink crystal">
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="rock" value="b">
-            b) <img src="img/amber.jpg" alt="a shining amber stone">
-          </label>
-        </div>
-        <div class="radio">
-          <label>
-            <input type="radio" name="rock" value="c">
-            c) <img src="img/amethyst.jpg" alt="a deep purple amethyst">
-          </label>
+        <div class="row">
+          <div class="col-3">
+            <div class="radio">
+              <label>
+                <input type="radio" name="rock" value="a" checked>
+                a) <img src="img/rainbowrock.webp" alt="a blue and pink crystal">
+              </label>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="radio">
+              <label>
+                <input type="radio" name="rock" value="b">
+                b) <img src="img/amber.jpg" alt="a shining amber stone">
+              </label>
+            </div>
+          </div>
+          <div class="col-5">
+            <div class="radio">
+              <label>
+                <input type="radio" name="rock" value="c">
+                c) <img src="img/amethyst.jpg" alt="a deep purple amethyst">
+              </label>
+            </div>
+          </div>
         </div>
       </div>
-      <button type="submit" class="btn-success">Find your perfect language!</button>
+      <button type="submit" class="btn">Find your perfect language!</button>
     </form>
 
     <!-- results -->
+    <div id="tie">
+      <h3>It's a tie! You are well-suited for either of the following languages: </h3>
+    </div>
     <div id="JavaScript">
       <h2>JavaScript</h2>
-      <p><span class="inputName"></span>, you have an eye for design and enjoy building attractive projects. You should study front-end development using HTML, CSS and JavaScript to build the user environment of webpages and applications. Remember, whatever you end up picking, any language is a good way to learn the concepts of programming that are applicable to all languages.</p>
+      <p><span class="inputName"></span>, you have an eye for design and enjoy building attractive projects. You should
+        study front-end development using HTML, CSS and JavaScript to build the user environment of webpages and
+        applications. Remember, whatever you end up picking, any language is a good way to learn the concepts of
+        programming that are applicable to all languages.</p>
     </div>
 
     <div id="CSharp">
       <h2>C#</h2>
-      <p><span class="inputName"></span>, you enjoy messing around under the hood of a project, building the wiring and pieces that make it work. #C would be be a great language to start learning back-end development and is used by many large businesses to build internal software. Concepts you learn in C# can easily transfer to learning other back-end languages, like Ruby, Python, Java, or Go.</p>
+      <p><span class="inputName"></span>, you enjoy messing around under the hood of a project, building the wiring and
+        pieces that make it work. C# would be be a great language to start learning back-end development and is used by
+        many large businesses to build internal software. Concepts you learn in C# can easily transfer to learning other
+        back-end languages, like Ruby, Python, Java, or Go.</p>
     </div>
 
     <div id="Python">
       <h2>Python</h2>
-      <p><span class="inputName"></span>, you want to jump right in and get started! Python is a programming language for everyone; well organized and easy to learn. It is used widely in back-end development and there are many free online resources to get you started. Such as <a href="https://www.py4e.com/lessons">Python for Everybody</a> and <a href="https://www.freecodecamp.org/">Free Code Camp</a>.</p>
+      <p><span class="inputName"></span>, you want to jump right in and get started! Python is a programming language
+        for everyone; well organized and easy to learn. It is used widely in back-end development and there are many
+        free online resources to get you started. Such as <a href="https://www.py4e.com/lessons">Python for
+          Everybody</a> and <a href="https://www.freecodecamp.org/">Free Code Camp</a>.</p>
     </div>
   </div>
 </body>
+
 </html>

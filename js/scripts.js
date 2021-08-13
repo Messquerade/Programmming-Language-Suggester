@@ -64,6 +64,12 @@ function findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5, inputQ6, inputQ
     return "C#";
   } else if (cTotal > aTotal && cTotal > bTotal) {
     return "Python";
+  } else if (aTotal === bTotal) {
+    return "Tie JavaScript/C#";
+  } else if (bTotal === cTotal) {
+    return "Tie C#/Python";
+  } else if (aTotal === cTotal) {
+    return "Tie JavaScript/Python";
   }
 }
 
@@ -90,19 +96,43 @@ $(document).ready(function() {
       $("#CSharp").hide();
       $("#Python").hide();
       $("#namePlease").hide();
+      $("#tie").hide();
       document.getElementById("JavaScript").scrollIntoView({behavior: 'smooth'});
     } else if (result === "C#") {
       $("#JavaScript").hide();
       $("#CSharp").show();
       $("#Python").hide();
       $("#namePlease").hide();
+      $("#tie").hide();
       document.getElementById("CSharp").scrollIntoView({behavior: 'smooth'});
     } else if (result === "Python") {
       $("#JavaScript").hide();
       $("#CSharp").hide();
       $("#Python").show();
       $("#namePlease").hide();
+      $("#tie").hide();
       document.getElementById("Python").scrollIntoView({behavior: 'smooth'});
+    } else if (result === "Tie JavaScript/C#") {
+      $("#JavaScript").show();
+      $("#CSharp").show();
+      $("#Python").hide();
+      $("#namePlease").hide();
+      $("#tie").show();
+      document.getElementById("JavaScript").scrollIntoView({behavior: 'smooth'});
+    } else if (result === "Tie C#/Python") {
+      $("#JavaScript").hide();
+      $("#CSharp").show();
+      $("#Python").show();
+      $("#namePlease").hide();
+      $("#tie").show();
+      document.getElementById("CSharp").scrollIntoView({behavior: 'smooth'});
+    } else if (result === "Tie JavaScript/Python") {
+      $("#JavaScript").show();
+      $("#CSharp").hide();
+      $("#Python").show();
+      $("#namePlease").hide();
+      $("#tie").show();
+      document.getElementById("JavaScript").scrollIntoView({behavior: 'smooth'});
     }
   });
 });
