@@ -57,7 +57,14 @@ function findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5, inputQ6, inputQ
   } else if (inputQ7 === "c") {
     cTotal ++;
   }
-  return Math.max(aTotal, bTotal, cTotal);
+  
+  if (aTotal > bTotal && aTotal > cTotal) {
+    return "JavaScript";
+  } else if (bTotal > aTotal && bTotal > cTotal) {
+    return "C#";
+  } else if (cTotal > aTotal && cTotal > bTotal) {
+    return "Python";
+  }
 }
 
 
@@ -72,5 +79,21 @@ $(document).ready(function() {
     const inputQ5 = $("input:radio[name=stuck]:checked").val();
     const inputQ6 = $("input:radio[name=character]:checked").val();
     const inputQ7 = $("input:radio[name=rock]:checked").val();
-  })
-})
+    const result = findResult(inputQ1, inputQ2, inputQ3, inputQ4, inputQ5, inputQ6, inputQ7)
+
+    $("#inputName").text(inputName);
+    if (result === "JavaScript") {
+      $("#JavaScript").show();
+      $("#CSharp").hide();
+      $("#Python").hide();
+    } else if (result === "C#") {
+      $("#JavaScript").hide();
+      $("#CSharp").show();
+      $("#Python").hide();
+    } else if (result === "Python") {
+      $("#JavaScript").hide();
+      $("#CSharp").hide();
+      $("#Python").show();
+    }
+  });
+});
